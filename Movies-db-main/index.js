@@ -3,14 +3,14 @@ import cors from "cors"
 import dotenv from "dotenv"
 import { pool } from "./db.js"
 
-await pool.query(`
-  CREATE TABLE IF NOT EXIST movies(
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(255) NOT NULL,
-    year INT NOT NULL,
-    genre VARCHAR(250) NOT NULL
-  )
-`)
+//await pool.query(`
+//  CREATE TABLE IF NOT EXIST movies(
+//    id INT AUTO_INCREMENT PRIMARY KEY,
+//    title VARCHAR(255) NOT NULL,
+//    year INT NOT NULL,
+//    genre VARCHAR(250) NOT NULL
+//  )
+//`)
 
 const app = express()
 app.use(express.json())
